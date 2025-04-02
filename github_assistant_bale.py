@@ -66,7 +66,7 @@ def get_all_users_simple():
         return cursor.fetchall()
 
 # end database
-bot = Bot(token="2019615183:bTLKgSxpidsxHem5h4wyu2R25mpgpen2CLOqyRNX") 
+bot = Bot(token="") 
 
 @bot.event 
 async def on_ready():

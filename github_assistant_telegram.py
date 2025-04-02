@@ -64,7 +64,7 @@ def get_all_users_simple():
         return cursor.fetchall()
 
 # Bot setup
-bot = telebot.TeleBot("8029495212:AAF7JKNFp9aP0W-Krfk4_1rHewQbtK4KELE")
+bot = telebot.TeleBot("")
 
 @bot.message_handler(commands=['start'])
 def start(message):

@@ -79,7 +79,7 @@ async def on_message(message:Message):
             pass
 
         button  = InlineKeyboardMarkup()
-        button.add(InlineKeyboardButton(text="🇮🇷 PERSION 🇮🇷",callback_data="persian"),row=1)
+        button.add(InlineKeyboardButton(text="🇮🇷 PERSIAN 🇮🇷",callback_data="persian"),row=1)
         button.add(InlineKeyboardButton(text="🇬🇧 ENGLISH 🇬🇧",callback_data="english"),row=3)
         await message.reply("زبان مورد نظر خود را انتخاب کنید🌐 \n\n Choose your preferred language🌐",components=button)
 ##################     admiin       #################
@@ -221,7 +221,7 @@ async def on_callback(callback:CallbackQuery):
         return await callback.message.reply("you cannot interact with buttons while in github bot")
     if callback.data == "language_switch":
         button  = InlineKeyboardMarkup()
-        button.add(InlineKeyboardButton(text="🇮🇷 PERSION 🇮🇷",callback_data="persian"),row=1)
+        button.add(InlineKeyboardButton(text="🇮🇷 PERSIAN 🇮🇷",callback_data="persian"),row=1)
         button.add(InlineKeyboardButton(text="🇬🇧 ENGLISH 🇬🇧",callback_data="english"),row=3)
         await callback.message.reply("زبان مورد نظر خود را انتخاب کنید🌐 \n\n Choose your preferred language🌐",components=button)
 
